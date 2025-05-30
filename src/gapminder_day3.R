@@ -26,7 +26,8 @@ ggplot(gapminder) +
   facet_wrap(~continent)
 ggsave(file="results/gapminder_dots.png", width=8,
        height=8, units="in", dpi=600)
-
+ggsave(file="results/gapminder_dots.svg", width=8,
+       height=8, units="in", dpi=600)
 
 # For loop demonstration
 continents = unique(gapminder$continent)
